@@ -4,7 +4,7 @@ float ball_y;
 
 float ball_dir = 1;
 
-float ball_size = 2;  // Radius
+float ball_size = 5;  // Radius
 
 float dy = 0;  // Direction
 
@@ -14,7 +14,7 @@ float dy = 0;  // Direction
 
 var paddle_width = 5;
 
-var paddle_height = 20;
+var paddle_height = 30;
 
 
 
@@ -26,7 +26,7 @@ void setup()
 
 {
 
-    size(600, 600);
+    size(800, 400);
 
     rectMode(CENTER_RADIUS);
 
