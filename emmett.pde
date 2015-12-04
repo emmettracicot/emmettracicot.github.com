@@ -26,7 +26,7 @@ void setup()
 
 {
 
-    size(200, 200);
+    size(400, 400);
 
     rectMode(CENTER_RADIUS);
 
@@ -50,7 +50,7 @@ void draw()
 
   
 
-    ball_x += ball_dir * 1.0;
+    ball_x += ball_dir * 2.0;
 
     ball_y += dy;
 
