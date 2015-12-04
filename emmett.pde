@@ -4,7 +4,7 @@ float ball_y;
 
 float ball_dir = 1;
 
-float ball_size = 5;  // Radius
+float ball_size = 2;  // Radius
 
 float dy = 0;  // Direction
 
@@ -26,7 +26,7 @@ void setup()
 
 {
 
-    size(400, 400);
+    size(600, 600);
 
     rectMode(CENTER_RADIUS);
 
@@ -50,7 +50,7 @@ void draw()
 
   
 
-    ball_x += ball_dir * 2.0;
+    ball_x += ball_dir * 4.0;
 
     ball_y += dy;
 
