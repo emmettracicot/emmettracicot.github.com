@@ -14,7 +14,7 @@ float dy = 0;  // Direction
 
 var paddle_width = 5;
 
-var paddle_height = 20;
+var paddle_height = 40;
 
 
 
