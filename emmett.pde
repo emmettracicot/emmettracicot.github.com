@@ -14,7 +14,7 @@ float dy = 0;  // Direction
 
 var paddle_width = 5;
 
-var paddle_height = 30;
+var paddle_height = 20;
 
 
 
@@ -26,7 +26,7 @@ void setup()
 
 {
 
-    size(800, 400);
+    size(600, 400);
 
     rectMode(CENTER_RADIUS);
 
@@ -50,7 +50,7 @@ void draw()
 
   
 
-    ball_x += ball_dir * 4.0;
+    ball_x += ball_dir * 5.0;
 
     ball_y += dy;
 
@@ -60,7 +60,7 @@ void draw()
 
         ball_y = random(0, height);
 
-        dy = 0;
+        dy = 5;
 
     }
 
