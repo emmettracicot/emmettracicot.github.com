@@ -2,8 +2,8 @@
 float ball_x;
 float ball_y;
 float ball_dir = 1;   // Direction of ball 
-float ball_size = 8;  // Radius of ball
-float ball_speed = 5; // Speed of ball
+float ball_size = 20;  // Radius of ball
+float ball_speed = 10; // Speed of ball
 
 // Global variables for the paddle
 var paddle_width = 5;
@@ -13,8 +13,8 @@ float dy = 2;
 var dist_wall = 8;
 
 // Adding total hits here...
-//float total = 0;
-//float highscore = 0;
+float total = 0;
+float highscore = 0;
 float score = 0;
 
 void setup() {
@@ -61,13 +61,13 @@ void draw() {
         document.getElementById("score").innerHTML = "Score = " + score;
 
         // Adding in the total hits here...
-        //total += 1;
-        //document.getElementById("total").innerHTML = "Total Hits = " + total;
+        total += 1;
+        document.getElementById("total").innerHTML = "Total Hits = " + total;
 
-        //if (score>highscore) {
-        //  highscore = score;
-        //  document.getElementById("highscore").innerHTML = "High Score = " + highscore;
-        //}
+        if (score>highscore) {
+          highscore = score;
+          document.getElementById("highscore").innerHTML = "High Score = " + highscore;
+        }
 
         // Check to see if the mouse is moving... if so calculate how fast
         if(mouseY != pmouseY) {
